@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Howard University Department of Physics and Astronomy colloquium schedule, speakers, abstracts, and recordings.">
+  <title>Howard Physics Colloquium</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="data/speakers-data.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#schedule">Skip to the schedule</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://howard.edu" aria-label="Howard University home">
+        <span class="brand-mark" aria-hidden="true">HU</span>
+        <span class="brand-copy">
+          <strong>Howard University</strong>
+          <span>Department of Physics &amp; Astronomy</span>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#schedule">Schedule</a>
+        <a href="#about">About</a>
+        <a href="#archive">Recordings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" id="semester-label">Fall 2026</p>
+          <h1>Howard Physics<br><span>Colloquium</span></h1>
+          <p class="hero-summary">Ideas at the frontiers of physics, astronomy, and interdisciplinary science—presented for the Howard community and the public.</p>
+          <div class="hero-meta" aria-label="Colloquium details">
+            <span>Wednesdays</span>
+            <span>3:00–4:00 PM ET</span>
+            <span>Banneker North, Room C06</span>
+          </div>
+          <a class="button button-primary" href="#schedule">Explore the schedule</a>
+        </div>
+        <aside class="next-event" id="next-event" aria-live="polite">
+          <p class="next-label">Next colloquium</p>
+          <div class="next-loading">Loading schedule…</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="schedule">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Speaker series</p>
+          <h2>Colloquium schedule</h2>
+        </div>
+        <p>Open an event for its abstract, speaker details, registration link, and recording when available.</p>
+      </div>
+
+      <div class="toolbar" aria-label="Schedule controls">
+        <label class="search-box">
+          <span class="sr-only">Search talks</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input id="search" type="search" placeholder="Search speaker, institution, or topic">
+        </label>
+        <label>
+          <span class="sr-only">Filter schedule</span>
+          <select id="status-filter">
+            <option value="all">All events</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="completed">Completed</option>
+            <option value="recordings">With recordings</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="schedule-grid" id="schedule-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No colloquia match this search.</p>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">About the series</p>
+          <h2>Physics for a broad scientific audience</h2>
+        </div>
+        <div class="about-copy">
+          <p>The Howard Physics Colloquium brings researchers to campus to share important ideas, emerging methods, and open questions across physics and neighboring disciplines.</p>
+          <p>Talks are intended for faculty, students, researchers, alumni, and interested members of the public. Event-specific access and registration information appears with each listing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="archive">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Watch again</p>
+          <h2>Recorded colloquia</h2>
+        </div>
+        <p>YouTube recordings will appear here automatically when a recording URL is added to the data file.</p>
+      </div>
+      <div class="recordings-grid" id="recordings-grid"></div>
+      <p class="empty-state" id="recordings-empty">No recordings have been posted yet.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Howard University Department of Physics &amp; Astronomy</strong>
+        <p>Washington, DC</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://physics.howard.edu">Department website</a>
+        <a href="https://howard.edu">Howard University</a>
+      </div>
+      <p class="footer-note">Colloquium information is subject to change.</p>
+    </div>
+  </footer>
+
+  <dialog id="event-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close event details">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <template id="event-card-template">
+    <article class="event-card">
+      <div class="event-date" aria-hidden="true">
+        <span class="date-month"></span>
+        <strong class="date-day"></strong>
+        <span class="date-year"></span>
+      </div>
+      <div class="speaker-portrait"></div>
+      <div class="event-content">
+        <div class="event-topline">
+          <span class="status-badge"></span>
+          <span class="event-format"></span>
+        </div>
+        <h3 class="event-title"></h3>
+        <p class="event-speaker"></p>
+        <p class="event-institution"></p>
+        <div class="event-actions"></div>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
