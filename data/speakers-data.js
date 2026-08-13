@@ -10,7 +10,7 @@ window.HOWARD_COLLOQUIA = {
   },
   "events": [
     {
-      "date": "8/19/2026",
+      "date": "2026-08-19",
       "speaker": "Bharat Ratra",
       "institution": "Kansas State University",
       "title": "The Accelerating Expanding Universe: Dark Matter, Dark Energy, and Einstein’s Cosmological Constant",
@@ -26,7 +26,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "8/26/2026",
+      "date": "2026-08-26",
       "speaker": "Nadya Mason",
       "institution": "The University of Chicago",
       "title": "",
@@ -42,7 +42,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "9/2/2026",
+      "date": "2026-09-02",
       "speaker": "Reserved for Trainees",
       "institution": "Howard University",
       "title": "Trainee research presentations",
@@ -58,7 +58,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "9/9/2026",
+      "date": "2026-09-09",
       "speaker": "James Yorke",
       "institution": "University of Maryland",
       "title": "",
@@ -74,7 +74,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "9/16/2026",
+      "date": "2026-09-16",
       "speaker": "Geraldine Cochrane",
       "institution": "The Ohio State University",
       "title": "",
@@ -90,7 +90,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "9/23/2026",
+      "date": "2026-09-23",
       "speaker": "Reserved for Trainees",
       "institution": "Howard University",
       "title": "Trainee research presentations",
@@ -106,7 +106,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "9/30/2026",
+      "date": "2026-09-30",
       "speaker": "Djordje Minic",
       "institution": "Virginia Tech",
       "title": "",
@@ -122,7 +122,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "10/7/2026",
+      "date": "2026-10-07",
       "speaker": "Reza Ejtehadi",
       "institution": "ICTP",
       "title": "",
@@ -138,7 +138,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "10/14/2026",
+      "date": "2026-10-14",
       "speaker": "Sairam Geethanath",
       "institution": "Johns Hopkins University",
       "title": "",
@@ -154,7 +154,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "10/21/2026",
+      "date": "2026-10-21",
       "speaker": "Dr. en C. Paola Ballesteros Zebadúa",
       "institution": "National Institute of Neurology and Neurosurgery",
       "title": "",
@@ -170,7 +170,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "10/28/2026",
+      "date": "2026-10-28",
       "speaker": "Dean Nergis Mavalvala",
       "institution": "Massachusetts Institute of Technology",
       "title": "",
@@ -186,7 +186,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "11/4/2026",
+      "date": "2026-11-04",
       "speaker": "Patricia Fofie",
       "institution": "University of California, Irvine",
       "title": "",
@@ -202,7 +202,7 @@ window.HOWARD_COLLOQUIA = {
       "published": true
     },
     {
-      "date": "11/18/2026",
+      "date": "2026-11-18",
       "speaker": "Carlos Ordonez",
       "institution": "University of Houston",
       "title": "",
