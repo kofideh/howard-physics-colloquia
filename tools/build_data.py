@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,6 +33,24 @@ def parse_bool(value: str) -> bool:
     return value.strip().lower() not in {"false", "0", "no", "n"}
 
 
+def normalize_date(value: str) -> str:
+    """Return a date as YYYY-MM-DD.
+
+    Accepts the ISO format used by the site and common formats produced
+    when Excel saves a CSV, such as 8/19/2026 or 08/19/2026.
+    """
+    value = value.strip()
+    for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y", "%Y/%m/%d"):
+        try:
+            return datetime.strptime(value, fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            pass
+    raise ValueError(
+        f"Unsupported date format {value!r}. "
+        "Use YYYY-MM-DD or a standard Excel date such as M/D/YYYY."
+    )
+
+
 def main() -> None:
     if not INPUT.exists():
         raise SystemExit(f"Missing input file: {INPUT}")
@@ -43,16 +62,22 @@ def main() -> None:
             raise SystemExit("speakers.csv must contain a 'date' column.")
 
         for row_number, row in enumerate(reader, start=2):
-            date = (row.get("date") or "").strip()
-            if not date:
+            raw_date = (row.get("date") or "").strip()
+            if not raw_date:
                 print(f"Skipping row {row_number}: no date")
                 continue
+            try:
+                date = normalize_date(raw_date)
+            except ValueError as exc:
+                raise SystemExit(f"Row {row_number}: {exc}") from exc
 
             event: dict[str, object] = {}
             for source_key, raw_value in row.items():
                 key = FIELD_MAP.get(source_key, source_key)
                 value = (raw_value or "").strip()
-                if key == "published":
+                if key == "date":
+                    event[key] = date
+                elif key == "published":
                     event[key] = parse_bool(value)
                 else:
                     event[key] = value
