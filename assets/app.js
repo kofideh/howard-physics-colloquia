@@ -242,7 +242,17 @@
   }
 
   function parseLocalDate(value) {
-    const [year, month, day] = value.split("-").map(Number);
+    const text = String(value || "").trim();
+    let year, month, day;
+
+    if (/^\d{4}-\d{1,2}-\d{1,2}$/.test(text)) {
+      [year, month, day] = text.split("-").map(Number);
+    } else if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(text)) {
+      [month, day, year] = text.split("/").map(Number);
+    } else {
+      return new Date(NaN);
+    }
+
     return new Date(year, month - 1, day, 12, 0, 0);
   }
 
