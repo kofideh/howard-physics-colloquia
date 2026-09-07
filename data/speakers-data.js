@@ -31,7 +31,7 @@ window.HOWARD_COLLOQUIA = {
       "institution": "The University of Chicago",
       "title": "",
       "abstract": "",
-      "format": "To be announced",
+      "format": "No Strain, No Gain: Modifying Transport in 2D Materials by Engineering Strain",
       "location": "",
       "eventUrl": "",
       "registrationUrl": "",
