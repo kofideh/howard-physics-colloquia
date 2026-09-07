@@ -54,7 +54,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
-      "status": "reserved",
+      "status": "scheduled",
       "published": true
     },
     {
@@ -102,7 +102,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
-      "status": "reserved",
+      "status": "scheduled",
       "published": true
     },
     {
