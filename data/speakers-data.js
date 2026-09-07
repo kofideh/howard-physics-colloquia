@@ -91,9 +91,9 @@ window.HOWARD_COLLOQUIA = {
     },
     {
       "date": "2026-09-23",
-      "speaker": "Reserved for Trainees",
-      "institution": "Howard University",
-      "title": "Trainee research presentations",
+      "speaker": "Marcel Corchado",
+      "institution": "Colorado University",
+      "title": "TBD",
       "abstract": "",
       "format": "In person",
       "location": "",
