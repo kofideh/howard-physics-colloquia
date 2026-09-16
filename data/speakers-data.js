@@ -36,7 +36,7 @@ window.HOWARD_COLLOQUIA = {
       "eventUrl": "",
       "registrationUrl": "",
       "speakerUrl": "",
-      "photoUrl": "",
+      "photoUrl": "assets/photos/nadyamason.jpg",
       "youtubeUrl": "https://youtu.be/4AAB57odypc?si=cVSM_i7yr6N9jUhS",
       "status": "scheduled",
       "published": true
@@ -52,7 +52,7 @@ window.HOWARD_COLLOQUIA = {
       "eventUrl": "",
       "registrationUrl": "",
       "speakerUrl": "",
-      "photoUrl": "",
+      "photoUrl": "assets/photos/AlirezaValizadeh.png",
       "youtubeUrl": "https://youtu.be/I1hi86xISKY?si=t18i6z8tx3tJuPhD",
       "status": "scheduled",
       "published": true
