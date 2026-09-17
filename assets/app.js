@@ -110,15 +110,44 @@
     badge.textContent = statusLabel(event);
     badge.classList.add(event.computedStatus);
     node.querySelector(".event-format").textContent = `${event.format} · ${event.time}`;
-    node.querySelector(".event-title").textContent = event.title || defaultTitle(event);
+    // node.querySelector(".event-title").textContent = event.title || defaultTitle(event);
+    const titleElement = node.querySelector(".event-title");
+    const titleText = event.title || defaultTitle(event);
+
+    if (event.youtubeUrl) {
+      const link = document.createElement("a");
+      link.href = event.youtubeUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = titleText;
+      titleElement.replaceChildren(link);
+    } else {
+      titleElement.textContent = titleText;
+    }
     node.querySelector(".event-speaker").textContent = event.speaker || defaultSpeaker(event);
     node.querySelector(".event-institution").textContent = event.institution || event.location;
 
     const actions = node.querySelector(".event-actions");
     const details = makeButton("Details", "button-secondary", () => openDialog(event));
     actions.append(details);
-    if (event.youtubeUrl) actions.append(makeLink("Watch recording", event.youtubeUrl, "button-youtube"));
-    else if (event.registrationUrl && event.computedStatus === "upcoming") actions.append(makeLink("Register", event.registrationUrl, "button-primary"));
+    if (event.youtubeUrl) {
+      actions.append(
+        makeLink("Watch recording", event.youtubeUrl, "button-youtube")
+      );
+    }
+
+    if (event.summaryPdf) {
+      actions.append(
+        makeLink("Read talk summary", event.summaryPdf, "button-secondary")
+      );
+    }
+
+    if (event.registrationUrl && event.computedStatus === "upcoming") {
+      actions.append(
+        makeLink("Register", event.registrationUrl, "button-primary")
+      );
+    }
+
     if (event.computedStatus === "upcoming" && event.speaker) actions.append(makeButton("Add to calendar", "button-ghost", () => downloadIcs(event)));
     return node;
   }
@@ -157,6 +186,16 @@
     const actions = dialogContent.querySelector(".dialog-actions");
     if (event.registrationUrl && event.computedStatus === "upcoming") actions.append(makeLink("Register", event.registrationUrl, "button-primary"));
     if (event.youtubeUrl) actions.append(makeLink("Watch recording", event.youtubeUrl, "button-youtube"));
+    if (event.youtubeUrl) {
+      actions.append(
+        makeLink("Watch recording", event.youtubeUrl, "button-youtube")
+      );
+    }
+    if (event.summaryPdf) {
+      actions.append(
+        makeLink("Read talk summary", event.summaryPdf, "button-secondary")
+      );
+    }
     if (event.speakerUrl) actions.append(makeLink("Speaker profile", event.speakerUrl, "button-secondary"));
     if (event.eventUrl) actions.append(makeLink("Official event page", event.eventUrl, "button-ghost"));
     if (event.computedStatus === "upcoming" && event.speaker) actions.append(makeButton("Add to calendar", "button-ghost", () => downloadIcs(event)));
