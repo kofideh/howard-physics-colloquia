@@ -22,6 +22,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -38,6 +39,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "assets/photos/nadyamason.jpg",
       "youtubeUrl": "https://youtu.be/4AAB57odypc?si=cVSM_i7yr6N9jUhS",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -54,6 +56,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "assets/photos/AlirezaValizadeh.png",
       "youtubeUrl": "https://youtu.be/I1hi86xISKY?si=t18i6z8tx3tJuPhD",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -70,6 +73,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "summaries/Yorke_Talk_Summary.pdf",
       "status": "scheduled",
       "published": true
     },
@@ -86,6 +90,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "assets/photos/cochrane.jpg",
       "youtubeUrl": "",
+      "summaryPdf": "summaries/Cochran_Talk_Summary.pdf",
       "status": "scheduled",
       "published": true
     },
@@ -102,6 +107,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "assets/photos/MarcelCorchado.jpg",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -118,6 +124,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -134,6 +141,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -150,6 +158,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -166,6 +175,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -182,6 +192,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -198,6 +209,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     },
@@ -214,6 +226,7 @@ window.HOWARD_COLLOQUIA = {
       "speakerUrl": "",
       "photoUrl": "",
       "youtubeUrl": "",
+      "summaryPdf": "",
       "status": "scheduled",
       "published": true
     }
