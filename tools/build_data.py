@@ -26,6 +26,7 @@ FIELD_MAP = {
     "speaker_url": "speakerUrl",
     "photo_url": "photoUrl",
     "youtube_url": "youtubeUrl",
+    "SummaryPDF": "summaryPdf",
 }
 
 
@@ -51,6 +52,26 @@ def normalize_date(value: str) -> str:
     )
 
 
+def validate_row(row_number: int, row: dict[str | None, str | list[str] | None]) -> None:
+    extra_values = row.get(None)
+    if extra_values:
+        raise SystemExit(
+            f"Row {row_number}: too many columns in speakers.csv. "
+            "Quote any field that contains commas."
+        )
+
+    for key, value in row.items():
+        if key is None:
+            continue
+        if value is None:
+            continue
+        if not isinstance(value, str):
+            raise SystemExit(
+                f"Row {row_number}: invalid value for column {key!r}. "
+                "Expected a text field in speakers.csv."
+            )
+
+
 def main() -> None:
     if not INPUT.exists():
         raise SystemExit(f"Missing input file: {INPUT}")
@@ -62,6 +83,7 @@ def main() -> None:
             raise SystemExit("speakers.csv must contain a 'date' column.")
 
         for row_number, row in enumerate(reader, start=2):
+            validate_row(row_number, row)
             raw_date = (row.get("date") or "").strip()
             if not raw_date:
                 print(f"Skipping row {row_number}: no date")
