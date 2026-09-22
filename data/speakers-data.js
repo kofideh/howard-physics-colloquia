@@ -122,7 +122,7 @@ window.HOWARD_COLLOQUIA = {
       "eventUrl": "",
       "registrationUrl": "",
       "speakerUrl": "",
-      "photoUrl": "",
+      "photoUrl": "assets/photos/minic.jpg",
       "youtubeUrl": "",
       "summaryPdf": "",
       "status": "scheduled",
