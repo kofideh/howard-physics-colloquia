@@ -89,7 +89,7 @@ window.HOWARD_COLLOQUIA = {
       "registrationUrl": "",
       "speakerUrl": "",
       "photoUrl": "assets/photos/cochrane.jpg",
-      "youtubeUrl": "https://youtu.be/iER-8jho__o",
+      "youtubeUrl": "",
       "summaryPdf": "summaries/Cochran_Talk_Summary.pdf",
       "status": "scheduled",
       "published": true
@@ -140,7 +140,7 @@ window.HOWARD_COLLOQUIA = {
       "registrationUrl": "",
       "speakerUrl": "",
       "photoUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtu.be/1s05SrF539w",
       "summaryPdf": "",
       "status": "scheduled",
       "published": true
