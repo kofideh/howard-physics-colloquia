@@ -157,7 +157,7 @@ window.HOWARD_COLLOQUIA = {
       "registrationUrl": "",
       "speakerUrl": "",
       "photoUrl": "assets/photos/sairam.png",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtu.be/x1ofCCdsBBk",
       "summaryPdf": "",
       "status": "scheduled",
       "published": true
@@ -173,7 +173,7 @@ window.HOWARD_COLLOQUIA = {
       "eventUrl": "",
       "registrationUrl": "",
       "speakerUrl": "",
-      "photoUrl": "",
+      "photoUrl": "assets/photos/Paola.png",
       "youtubeUrl": "",
       "summaryPdf": "",
       "status": "scheduled",
