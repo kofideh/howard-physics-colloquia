@@ -225,7 +225,7 @@ window.HOWARD_COLLOQUIA = {
       "registrationUrl": "",
       "speakerUrl": "",
       "photoUrl": "assets/photos/CarlosROrdonez.jpg",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtu.be/cRzEYauMeDQ",
       "summaryPdf": "",
       "status": "scheduled",
       "published": true
